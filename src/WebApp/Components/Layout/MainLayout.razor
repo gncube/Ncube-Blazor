@@ -1,8 +1,15 @@
 ﻿@inherits LayoutComponentBase
-<LoginDisplay />
 
-<NavMenu />
-
-<main class="container">
-    @Body
-</main>
+<div class="d-flex flex-column h-100">
+    <!---Top Nav--->
+    <NavMenu />
+    <LoginDisplay />
+    <!-- Main -->
+    <main class="flex-grow-1">
+        @Body
+    </main>
+    <!-- Footer-->
+    <footer class="flex-shrink-0">
+        <FooterBar />
+    </footer>
+</div>
